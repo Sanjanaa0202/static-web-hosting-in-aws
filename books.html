@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest | Browse Books</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="books.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <span>BookNest</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./books.html">Browse Books</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <!-- <li><a href="#">Contact</a></li> -->
+                    <!-- <li><a href="#" class="btn">Sign In</a></li> -->
+                    <li><a href="signin.html">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Browse Books Section -->
+    <section class="browse-books">
+        <div class="container">
+            <h2 class="section-title">Browse Our Collection</h2>
+            
+            <div class="search-filter">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Search by title, author or genre...">
+                </div>
+                <select class="filter-dropdown" id="genre-filter">
+                    <option value="">All Genres</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="mystery">Humour</option>
+                    <option value="biography">Biography</option>
+                    <option value="history">History</option>
+                    <option value="business">Business</option>
+                </select>
+                <select class="filter-dropdown" id="price-filter">
+                    <option value="">All Prices</option>
+                    <option value="0-100">Under ₹100</option>
+                    <option value="100-200">₹100 - ₹200</option>
+                    <option value="200-300">₹200 - ₹300</option>
+                    <option value="300">Above ₹300</option>
+                </select>
+            </div>
+            
+            <div class="books-grid" id="books-container">
+                <!-- Book 1 -->
+                <div class="book-card" data-title="The Diary of a Young Girl" data-author="Anne Frank" data-genre="biography" data-price="150">
+                    <div class="book-badge">Bestseller</div>
+                    <div class="book-cover">
+                        <img src="./images/biography/anne frank.jpg" alt="The Diary of a Young Girl">
+                    </div>
+                    <div class="book-info">
+                        <h3>The Diary of a Young Girl</h3>
+                        <p class="author">Anne Frank</p>
+                        <span class="genre">Biography</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹150</div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 2 -->
+                <div class="book-card" data-title="5 KILLER Habits" data-author="Sree Krishna Seelam" data-genre="business" data-price="120">
+                    <div class="book-cover">
+                        <img src="./images/business/5 KILLER Habits.jpg" alt="5 KILLER Habits">
+                    </div>
+                    <div class="book-info">
+                        <h3>5 KILLER Habits</h3>
+                        <p class="author">Sree Krishna Seelam</p>
+                        <span class="genre">Business</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹120</div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 3 -->
+                <div class="book-card" data-title="A court of silver flames" data-author="Sarah J Maas" data-genre="fiction" data-price="180">
+                    <div class="book-badge">Classic</div>
+                    <div class="book-cover">
+                        <img src="./images/fiction/A court of silver flames - fic.jpg" alt="A court of silver flames">
+                    </div>
+                    <div class="book-info">
+                        <h3>A court of silver flames</h3>
+                        <p class="author">Sarah J Maas</p>
+                        <span class="genre">Fiction</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹180 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 4 -->
+                <div class="book-card" data-title="After 1177 B.C." data-author="Eric H Cline" data-genre="history" data-price="140">
+                    <div class="book-cover">
+                        <img src="./images/history/After 1177 B.C..jpg" alt="After 1177 B.C.">
+                    </div>
+                    <div class="book-info">
+                        <h3>After 1177 B.C.</h3>
+                        <p class="author">Eric H Cline</p>
+                        <span class="genre">History</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹140</div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 5 -->
+                <div class="book-card" data-title="A man called ove" data-author="Fredrick Backman" data-genre="humor" data-price="130">
+                    <div class="book-badge">Popular</div>
+                    <div class="book-cover">
+                        <img src="./images/humor/a man called ove.jpg" alt="A man called ove">
+                    </div>
+                    <div class="book-info">
+                        <h3>A man called ove</h3>
+                        <p class="author">Fredrick Backman</p>
+                        <span class="genre">Humour</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹130</div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 6 -->
+                <div class="book-card" data-title="Wings of Fire" data-author="Arun Tiwari" data-genre="biography" data-price="110">
+                    <div class="book-cover">
+                        <img src="./images/biography/apj abdul kalam.jpg" alt="Wings of Fire">
+                    </div>
+                    <div class="book-info">
+                        <h3>Wings of Fire</h3>
+                        <p class="author">Arun Tiwari</p>
+                        <span class="genre">Biography</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹110</div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 7 -->
+                <div class="book-card" data-title="Deep Work" data-author="Seth Godin" data-genre="business" data-price="100">
+                    <div class="book-cover">
+                        <img src="./images/business/DEEP WORK.jpg" alt="Deep Work">
+                    </div>
+                    <div class="book-info">
+                        <h3>Deep Work</h3>
+                        <p class="author">Seth Godin</p>
+                        <span class="genre">Business</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹100</div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 8 -->
+                <div class="book-card" data-title="Before the coffee gets cold" data-author="Toshikazu Kawaguchi" data-genre="fiction" data-price="125">
+                    <div class="book-badge">Bestseller</div>
+                    <div class="book-cover">
+                        <img src="./images/fiction/before coffee gets cold.jpg" alt="Before the coffee gets cold">
+                    </div>
+                    <div class="book-info">
+                        <h3>Before the coffee gets cold</h3>
+                        <p class="author">Toshikazu Kawaguchi</p>
+                        <span class="genre">Fiction</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹125</div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 9 -->
+                <div class="book-card" data-title="Bhagavad Gita" data-author="Hari Chetan" data-genre="history" data-price="115">
+                    <div class="book-cover">
+                        <img src="./images/history/Bhagavad Gita.jpg" alt="Bhagavad Gita">
+                    </div>
+                    <div class="book-info">
+                        <h3>Bhagavad Gita</h3>
+                        <p class="author">Hari Chetan</p>
+                        <span class="genre">History</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹115</div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 10 -->
+                <div class="book-card" data-title="Born a Crime" data-author="Trevor Noah" data-genre="humor" data-price="135">
+                    <div class="book-cover">
+                        <img src="./images/humor/born a crime.jpg" alt="Born a Crime">
+                    </div>
+                    <div class="book-info">
+                        <h3>Born a Crime</h3>
+                        <p class="author">Trevor Noah</p>
+                        <span class="genre">Humour</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹135</div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+              
+                <!-- Book 11 -->
+                <div class="book-card" data-title="Becoming" data-author="Michelle Obama" data-genre="biography" data-price="200">
+                    <div class="book-badge">Classic</div>
+                    <div class="book-cover">
+                        <img src="./images/biography/becoming.jpg" alt="Becoming">
+                    </div>
+                    <div class="book-info">
+                        <h3>Becoming</h3>
+                        <p class="author">Michelle Obama</p>
+                        <span class="genre">Biography</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹200 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 12 -->
+                <div class="book-card" data-title="Do It Today" data-author="Darius Foroux" data-genre="business" data-price="145">
+                    <div class="book-cover">
+                        <img src="./images/business/Do It Today.jpg" alt="Do It Today">
+                    </div>
+                    <div class="book-info">
+                        <h3>Do It Today</h3>
+                        <p class="author">Darius Foroux</p>
+                        <span class="genre">Business</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹145 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 13 -->
+                <div class="book-card" data-title="Dark Matter" data-author="Blake Crouch" data-genre="fiction" data-price="95">
+                    <div class="book-badge">Popular</div>
+                    <div class="book-cover">
+                        <img src="./images/fiction/dark matter.jpg" alt="Dark Matter">
+                    </div>
+                    <div class="book-info">
+                        <h3>Dark Matter</h3>
+                        <p class="author">Blake Crouch</p>
+                        <span class="genre">Fiction</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹95</div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 14 -->
+                <div class="book-card" data-title="Crazy History Facts Book" data-author="Skriuwer" data-genre="history" data-price="160">
+                    <div class="book-cover">
+                        <img src="./images/history/Crazy History Facts Book.jpg" alt="Crazy History Facts Book">
+                    </div>
+                    <div class="book-info">
+                        <h3>Crazy History Facts Book</h3>
+                        <p class="author">Skriuwer</p>
+                        <span class="genre">History</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹160 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 15 -->
+                <div class="book-card" data-title="Hyperbole and a Half" data-author="Allie Brosh" data-genre="humor" data-price="175">
+                    <div class="book-cover">
+                        <img src="./images/humor/hyperbole and a half.jpg" alt="Hyperbole and a Half">
+                    </div>
+                    <div class="book-info">
+                        <h3>Hyperbole and a Half</h3>
+                        <p class="author">Allie Brosh</p>
+                        <span class="genre">Humour</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹175</div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 16 -->
+                <div class="book-card" data-title="The Autobiography of Benjamin Franklin" data-author="Benjamin Franklin" data-genre="biography" data-price="150">
+                    <div class="book-badge">Bestseller</div>
+                    <div class="book-cover">
+                        <img src="./images/biography/benjamin franklin.jpg" alt="The Autobiography of Benjamin Franklin">
+                    </div>
+                    <div class="book-info">
+                        <h3>The Autobiography of Benjamin Franklin</h3>
+                        <p class="author">Benjamin Franklin</p>
+                        <span class="genre">Biography</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹150 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 17 -->
+                <div class="book-card" data-title="Human Edge in the AI Age" data-author="Nitin Seth" data-genre="business" data-price="140">
+                    <div class="book-cover">
+                        <img src="./images/business/Human Edge in the AI Age.jpg" alt="Human Edge in the AI Age">
+                    </div>
+                    <div class="book-info">
+                        <h3>Human Edge in the AI Age</h3>
+                        <p class="author">Nitin Seth</p>
+                        <span class="genre">Business</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹140 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 18 -->
+                <div class="book-card" data-title="of Blood and Fire" data-author="Ryan Cahill" data-genre="fiction" data-price="190">
+                    <div class="book-cover">
+                        <img src="./images/fiction/of Blood and Fire - fic.jpg" alt="of Blood and Fire">
+                    </div>
+                    <div class="book-info">
+                        <h3>of Blood and Fire</h3>
+                        <p class="author">Ryan Cahill</p>
+                        <span class="genre">Fiction</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹190 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 19 -->
+                <div class="book-card" data-title="Early Indians" data-author="Tony Joseph" data-genre="history" data-price="155">
+                    <div class="book-badge">Popular</div>
+                    <div class="book-cover">
+                        <img src="./images/history/early indians.jpg" alt="Early Indians">
+                    </div>
+                    <div class="book-info">
+                        <h3>Early Indians</h3>
+                        <p class="author">Tony Joseph</p>
+                        <span class="genre">History</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹155 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 20 -->
+                <div class="book-card" data-title="Italian Brainrot" data-author="Francesco Memetti" data-genre="humor" data-price="165">
+                    <div class="book-cover">
+                        <img src="./images/humor/italian brainrot.jpg" alt="Italian Brainrot">
+                    </div>
+                    <div class="book-info">
+                        <h3>Italian Brainrot</h3>
+                        <p class="author">Francesco Memetti</p>
+                        <span class="genre">Humour</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹165 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>                
+                       
+                <!-- Book 21 -->
+                <div class="book-card" data-title="Why I am an Atheist and other works" data-author="Bhagat Singh" data-genre="biography" data-price="125">
+                    <div class="book-cover">
+                        <img src="./images/biography/Bhagat Singh.jpg" alt="Why I am an Atheist and other works">
+                    </div>
+                    <div class="book-info">
+                        <h3>Why I am an Atheist and other works</h3>
+                        <p class="author">Bhagat Singh</p>
+                        <span class="genre">Biography</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹125 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 22 -->
+                <div class="book-card" data-title="Ikigai & Kaizen" data-author="Anthony Raymond" data-genre="business" data-price="145">
+                    <div class="book-badge">Bestseller</div>
+                    <div class="book-cover">
+                        <img src="./images/business/Ikigai & Kaizen.jpg" alt="Ikigai & Kaizen">
+                    </div>
+                    <div class="book-info">
+                        <h3>Ikigai & Kaizen</h3>
+                        <p class="author">Anthony Raymond</p>
+                        <span class="genre">Business</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹145 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 23 -->
+                <div class="book-card" data-title="Silver Elite" data-author="Dani Francis" data-genre="fiction" data-price="135">
+                    <div class="book-cover">
+                        <img src="./images/fiction/silver elite.jpg" alt="Silver Elite">
+                    </div>
+                    <div class="book-info">
+                        <h3>Silver Elite</h3>
+                        <p class="author">Dani Francis</p>
+                        <span class="genre">Fiction</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹135 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 24 -->
+                <div class="book-card" data-title="India's Glorious Scientific Tradition" data-author="Suresh Soni" data-genre="history" data-price="150">
+                    <div class="book-cover">
+                        <img src="./images/history/India's Glorious Scientific Tradition.jpg" alt="India's Glorious Scientific Tradition">
+                    </div>
+                    <div class="book-info">
+                        <h3>India's Glorious Scientific Tradition</h3>
+                        <p class="author">Suresh Soni</p>
+                        <span class="genre">History</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹150</div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 25 -->
+                <div class="book-card" data-title="Lallan Sweets" data-author="Srishti Chaudhary" data-genre="humor" data-price="155">
+                    <div class="book-badge">Popular</div>
+                    <div class="book-cover">
+                        <img src="./images/humor/lallan sweets.jpg" alt="Lallan Sweets">
+                    </div>
+                    <div class="book-info">
+                        <h3>Lallan Sweets</h3>
+                        <p class="author">Srishti Chaudhary</p>
+                        <span class="genre">Humour</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹155</div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 26 -->
+                <div class="book-card" data-title="An Autobiography - Mahatma Gandhi" data-author="Mahatma Gandhi" data-genre="biography" data-price="140">
+                    <div class="book-cover">
+                        <img src="./images/biography/gandhi.jpg" alt="An Autobiography - Mahatma Gandhi">
+                    </div>
+                    <div class="book-info">
+                        <h3>An Autobiography - Mahatma Gandhi</h3>
+                        <p class="author">Mahatma Gandhi</p>
+                        <span class="genre">Biography</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹140 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 27 -->
+                <div class="book-card" data-title="Never Split the Difference" data-author="Chris Voss" data-genre="business" data-price="130">
+                    <div class="book-cover">
+                        <img src="./images/business/Never Split the Difference.jpg" alt="Never Split the Difference">
+                    </div>
+                    <div class="book-info">
+                        <h3>Never Split the Difference</h3>
+                        <p class="author">Chris Voss</p>
+                        <span class="genre">Business</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹130 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 28 -->
+                <div class="book-card" data-title="The Great Dune Trilogy" data-author="Frank Herbert" data-genre="fiction" data-price="160">
+                    <div class="book-badge">Classic</div>
+                    <div class="book-cover">
+                        <img src="./images/fiction/the great dune trilogy.jpg" alt="The Great Dune Trilogy">
+                    </div>
+                    <div class="book-info">
+                        <h3>The Great Dune Trilogy</h3>
+                        <p class="author">Frank Herbert</p>
+                        <span class="genre">Fiction</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹160 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 29 -->
+                <div class="book-card" data-title="Julius Caesar" data-author="William Shakespeare" data-genre="history" data-price="145">
+                    <div class="book-cover">
+                        <img src="./images/history/Julius Caesar.jpg" alt="Julius Caesar">
+                    </div>
+                    <div class="book-info">
+                        <h3>Julius Caesar</h3>
+                        <p class="author">William Shakespeare</p>
+                        <span class="genre">History</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹145</div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 30 -->
+                <div class="book-card" data-title="Life Lightly Roasted" data-author="G.S Shridhar" data-genre="humor" data-price="120">
+                    <div class="book-cover">
+                        <img src="./images/humor/life lightly roasted.jpg" alt="Life Lightly Roasted">
+                    </div>
+                    <div class="book-info">
+                        <h3>Life Lightly Roasted</h3>
+                        <p class="author">G.S Shridhar</p>
+                        <span class="genre">Humour</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹120 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+     
+                <!-- Book 31 -->
+                <div class="book-card" data-title="Tuesday's with Morrie" data-author="Mitch Albom" data-genre="biography" data-price="150">
+                    <div class="book-badge">Popular</div>
+                    <div class="book-cover">
+                        <img src="./images/biography/morrie.jpg" alt="Tuesday's with Morrie">
+                    </div>
+                    <div class="book-info">
+                        <h3>Tuesday's with Morrie</h3>
+                        <p class="author">Mitch Albom</p>
+                        <span class="genre">Biography</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹150 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 32 -->
+                <div class="book-card" data-title="The 5 AM Club" data-author="Robin Sharma" data-genre="business" data-price="135">
+                    <div class="book-cover">
+                        <img src="./images/business/The 5 AM Club.jpg" alt="The 5 AM Club">
+                    </div>
+                    <div class="book-info">
+                        <h3>The 5 AM Club</h3>
+                        <p class="author">Robin Sharma</p>
+                        <span class="genre">Business</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹135 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 33 -->
+                <div class="book-card" data-title="The Hitchhiker's Guide to the Galaxy" data-author="Douglas Adams" data-genre="fiction" data-price="140">
+                    <div class="book-cover">
+                        <img src="./images/fiction/The Hitchhiker's Guide to the Galaxy.jpg" alt="The Hitchhiker's Guide to the Galaxy">
+                    </div>
+                    <div class="book-info">
+                        <h3>The Hitchhiker's Guide to the Galaxy</h3>
+                        <p class="author">Douglas Adams</p>
+                        <span class="genre">Fiction</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹140</div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 34 -->
+                <div class="book-card" data-title="Meditations" data-author="Marcus Aurelius" data-genre="history" data-price="125">
+                    <div class="book-badge">Bestseller</div>
+                    <div class="book-cover">
+                        <img src="./images/history/meditations.jpg" alt="Meditations">
+                    </div>
+                    <div class="book-info">
+                        <h3>Meditations</h3>
+                        <p class="author">Marcus Aurelius</p>
+                        <span class="genre">History</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹125 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Book 35 -->
+                <div class="book-card" data-title="The Liars Guide" data-author="Sanjay Shukla" data-genre="humor" data-price="110">
+                    <div class="book-cover">
+                        <img src="./images/humor/the liars guide.jpg" alt="The Liars Guide">
+                    </div>
+                    <div class="book-info">
+                        <h3>The Liars Guide</h3>
+                        <p class="author">Sanjay Shukla</p>
+                        <span class="genre">Humour</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹110 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+      
+                <!-- Book 36 -->
+                <div class="book-card" data-title="The Horse, the Wheel, and Language" data-author="David W Anthony" data-genre="history" data-price="115">
+                    <div class="book-cover">
+                        <img src="./images/history/The Horse, the Wheel, and Language.jpg" alt="The Horse, the Wheel, and Language">
+                    </div>
+                    <div class="book-info">
+                        <h3>The Horse, the Wheel, and Language</h3>
+                        <p class="author">David W Anthony</p>
+                        <span class="genre">History</span>
+                        <div class="rental-info">
+                            <div class="rental-price">₹115 </div>
+                            <a href="#" class="btn">Like</a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+            <!-- <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>BookNest</h3>
+                    <p>Your cozy nest for temporary book companions. Read more, spend less, live better.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Books</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Fiction</a></li>
+                        <li><a href="#">Mystery & Thriller</a></li>
+                        <li><a href="#">Science Fiction</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                        <li><a href="#">Biographies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Book Street, Mumbai, India</li>
+                        <li><i class="fas fa-phone"></i> +91 12345 67890</li>
+                        <li><i class="fas fa-envelope"></i> hello@booknest.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 BookNest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Search functionality
+        document.getElementById('search-input').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const books = document.querySelectorAll('.book-card');
+            
+            books.forEach(book => {
+                const title = book.getAttribute('data-title').toLowerCase();
+                const author = book.getAttribute('data-author').toLowerCase();
+                const genre = book.getAttribute('data-genre').toLowerCase();
+                
+                if (title.includes(searchTerm) || author.includes(searchTerm) || genre.includes(searchTerm)) {
+                    book.style.display = 'block';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
+        });
+        
+        // Genre filter
+        document.getElementById('genre-filter').addEventListener('change', function() {
+            const selectedGenre = this.value;
+            const books = document.querySelectorAll('.book-card');
+            
+            books.forEach(book => {
+                const genre = book.getAttribute('data-genre');
+                
+                if (selectedGenre === '' || genre === selectedGenre) {
+                    book.style.display = 'block';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
+        });
+        
+        // Price filter
+        document.getElementById('price-filter').addEventListener('change', function() {
+            const selectedPrice = this.value;
+            const books = document.querySelectorAll('.book-card');
+            
+            books.forEach(book => {
+                const price = parseInt(book.getAttribute('data-price'));
+                let shouldShow = true;
+                
+                if (selectedPrice === '0-100') {
+                    shouldShow = price < 100;
+                } else if (selectedPrice === '100-200') {
+                    shouldShow = price >= 100 && price <= 200;
+                } else if (selectedPrice === '200-300') {
+                    shouldShow = price >= 200 && price <= 300;
+                } else if (selectedPrice === '300') {
+                    shouldShow = price > 300;
+                }
+                
+                if (selectedPrice === '' || shouldShow) {
+                    book.style.display = 'block';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
