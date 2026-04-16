@@ -94,3 +94,6 @@ BookNest/
 ## ⭐ Acknowledgment
 
 This project was developed as part of hands-on learning in web development and cloud deployment using AWS.
+
+<img width="1919" height="1078" alt="image" src="https://github.com/user-attachments/assets/3c3fec5d-0633-4553-8aea-9d0ea85a6eda" />
+
