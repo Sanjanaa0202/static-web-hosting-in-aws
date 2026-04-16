@@ -1,18 +1,18 @@
-# 📚 BookNest – Online Book Store (Frontend + AWS Deployment)
+#  BookNest – Online Book Store (Frontend + AWS Deployment)
 
-## 🚀 Project Overview
+##  Project Overview
 
 BookNest is a responsive web application designed for browsing and managing books. It provides users with an intuitive interface to explore books, manage cart and wishlist, and simulate an online bookstore experience.
 
 This project is deployed using AWS services to ensure scalability, performance, and security.
 
 
-## 🌐 Live Demo
+##  Live Demo
 
-🔗 https://d2w2gnbpk6a731.cloudfront.net
+ https://d2w2gnbpk6a731.cloudfront.net
 
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 
@@ -27,33 +27,23 @@ This project is deployed using AWS services to ensure scalability, performance, 
 * Origin Access Control (OAC) for secure access
 
 
-## ✨ Features
+## Features
 
-* 📖 Browse books collection
-* 🛒 Add to cart interface
-* ❤️ Wishlist functionality
-* 🔐 Sign In / Sign Up UI
-* 📱 Fully responsive design
+*  Browse books collection
+*  Add to cart interface
+*  Wishlist functionality
+*  Sign In / Sign Up UI
+*  Fully responsive design
 
 
-## 🔒 Security Implementation
+## Security Implementation
 
 * Configured **Origin Access Control (OAC)** to restrict direct access to S3
 * Applied secure **bucket policy** allowing access only through CloudFront
 * Prevented public exposure of static assets
 
 
-## 🧩 Challenges Faced
-
-* Encountered **Access Denied** error during deployment
-* Resolved by:
-
-  * Correctly configuring bucket policy
-  * Attaching CloudFront OAC
-  * Setting proper permissions and origin settings
-
-
-## 📂 Project Structure
+## Project Structure
 
 ```
 BookNest/
@@ -73,7 +63,7 @@ BookNest/
 ```
 
 
-## 🚀 Deployment Steps
+## Deployment Steps
 
 1. Created an S3 bucket and uploaded static files
 2. Configured CloudFront distribution
@@ -83,7 +73,7 @@ BookNest/
 6. Deployed and tested the application
 
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 * Backend integration (Node.js / Express)
 * Database (MongoDB) for user & cart data
@@ -91,9 +81,22 @@ BookNest/
 * Payment gateway integration
 
 
-## ⭐ Acknowledgment
+## Acknowledgment
 
 This project was developed as part of hands-on learning in web development and cloud deployment using AWS.
 
-<img width="1919" height="1078" alt="image" src="https://github.com/user-attachments/assets/3c3fec5d-0633-4553-8aea-9d0ea85a6eda" />
+## UI Preview
+
+### Home Page
+<img width="1893" height="1000" alt="image" src="https://github.com/user-attachments/assets/0fb3f9dc-232b-4e7a-9b72-8646aded1408" />
+
+### Browse Books
+<img width="1898" height="999" alt="image" src="https://github.com/user-attachments/assets/5a3dece2-e64e-484a-8dd5-d2285df0aa9f" />
+
+### Sign In
+<img width="1920" height="1407" alt="image" src="https://github.com/user-attachments/assets/d2611ce3-c647-42d9-aab7-db864579f16e" />
+
+### Sign Up
+<img width="1920" height="1500" alt="image" src="https://github.com/user-attachments/assets/fafaa4dc-bc61-4af6-90a1-c1eca55415f0" />
+
 
